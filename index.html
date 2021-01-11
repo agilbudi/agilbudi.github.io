@@ -80,11 +80,6 @@
                                     <a class="dropdown-item" href="#">Separated link</a>
                                 </div>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="C:/">
-                                    <span class="no-icon">Log out</span>
-                                </a>
-                            </li>
                         </ul>
                     </div>
                 </div>
@@ -232,12 +227,12 @@
                 $('#uas').addClass('active');
             } else if (name == "profile") {
                 $('.menu').removeClass('active');
-                $('.content').load('profile.php');
+                $('.content').load('profile.html');
                 $('#profile').addClass('active');
             }
         });
         // halaman yang di load default pertama kali
-        $('.content').load('user.html');
+        $('.content').load('uas.html');
         $('#uas').addClass('active');
     });
 </script>
