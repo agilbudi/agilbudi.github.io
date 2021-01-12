@@ -39,13 +39,13 @@
                     </a>
                 </div>
                 <ul class="nav">
-                    <li class="nav-item menu" id="profile">
+                    <li class="nav-item side_menu" id="profile">
                         <a class="nav-link pointer">
                             <i class="nc-icon nc-zoom-split"></i>
                             <p>Profile</p>
                         </a>
                     </li>
-                    <li class="nav-item menu" id="task">
+                    <li class="nav-item side_menu" id="task">
                         <a class="nav-link pointer">
                             <i class="nc-icon nc-icon nc-paper-2"></i>
                             <p>Task</p>
@@ -86,11 +86,11 @@
             </nav>
             <!-- End Navbar -->
 
-            <!-- content -->
-            <div class="content">
-                <!-- this is page content -->
+            <!-- isi -->
+            <div class="isi content">
+                <!-- ini isi page -->
             </div>
-            <!-- End content  -->
+            <!-- End isi  -->
             
             <!-- footer  -->
             <footer class="footer">
@@ -145,21 +145,21 @@
 <!-- selected sidebar -->
 <script type="text/javascript">
     $(document).ready(function() {
-        $('.menu').click(function() {
+        $('.side_menu').click(function() {
             var name = $(this).attr('id');
             
             if (name == "task") {
-                $('.menu').removeClass('active');
-                $('.content').load('task.html');
+                $('.side_menu').removeClass('active');
+                $('.isi').load('task.html');
                 $('#task').addClass('active');
             } else if (name == "profile") {
-                $('.menu').removeClass('active');
-                $('.content').load('profile.html');
+                $('.side_menu').removeClass('active');
+                $('.isi').load('profile.html');
                 $('#profile').addClass('active');
             }
         });
         // halaman yang di load default pertama kali
-        $('.content').load('profile.html');
+        $('.isi').load('profile.html');
         $('#profile').addClass('active');
     });
 </script>
