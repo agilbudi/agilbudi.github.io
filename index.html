@@ -16,7 +16,6 @@
     <link href="assets/css/light-bootstrap-dashboard.css?v=2.0.0 " rel="stylesheet" />
     <!-- Animation library for notifications   -->
     <link href="assets/css/animate.min.css" rel="stylesheet"/>
-    <link href="assets/css/pe-icon-7-stroke.css" rel="stylesheet" />
     <style>
         div.sidebar-wrapper ul li a.pointer {
             cursor: pointer;
@@ -27,60 +26,61 @@
 
 <body>
     <div class="wrapper">
-        <div class="sidebar" data-image="assets/img/sidebar4.jpg">
+        <div class="sidebar" data-image="assets/img/sidebar-5.jpg">
             <!--
         Tip 1: You can change the color of the sidebar using: data-color="purple | blue | green | orange | red"
 
         Tip 2: you can also add an image using data-image tag
     -->
             <div class="sidebar-wrapper">
-                <div class="logo">
+                <div class="logo p-1">
                     <a href="index.html" class="simple-text">
-                      <img width="80px" height="50px" src="assets/img/ico-hide09.png"/>
+                      <img width="60px" height="40px" src="assets/img/ico-hide09.png"/>
                     </a>
                 </div>
                 <ul class="nav">
-                    <li class="nav-item menu" id="uas">
-                        <a class="nav-link pointer">
-                            <i class="nc-icon nc-icon nc-paper-2"></i>
-                            <p>UAS</p>
-                        </a>
-                    </li>
                     <li class="nav-item menu" id="profile">
                         <a class="nav-link pointer">
                             <i class="nc-icon nc-zoom-split"></i>
                             <p>Profile</p>
                         </a>
                     </li>
+                    <li class="nav-item menu" id="task">
+                        <a class="nav-link pointer">
+                            <i class="nc-icon nc-icon nc-paper-2"></i>
+                            <p>Task</p>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
+
         <div class="main-panel">
             <!-- Navbar -->
-            <nav class="navbar navbar-expand-lg " color-on-scroll="500">
+            <nav class="navbar navbar-expand-lg shadow-sm" color-on-scroll="500">
                 <div class="container-fluid">
-                    <a class="navbar-brand menu nc-icon nc-planet" href="#"> Dashboard</a>
+                    <a class="navbar-brand menu nc-icon nc-planet" href="#"> HOME</a>
                     <button href="" class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-bar burger-lines"></span>
                         <span class="navbar-toggler-bar burger-lines"></span>
                         <span class="navbar-toggler-bar burger-lines"></span>
                     </button>
                     <div class="collapse navbar-collapse justify-content-end" id="navigation">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <span class="no-icon">Menu</span>
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item" href="#">Another action</a>
-                                    <a class="dropdown-item" href="#">Something</a>
-                                    <a class="dropdown-item" href="#">Something else here</a>
-                                    <div class="divider"></div>
-                                    <a class="dropdown-item" href="#">Separated link</a>
-                                </div>
-                            </li>
-                        </ul>
+                    <ul class="navbar-nav mr-5">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="Menu" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="nc-icon nc-planet mr-2"></i> <b class="nc-icon">Menu</b>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="profile.html(content)">Profile</a>
+                                <a class="dropdown-item" href="repositori.html(content)">Repositories</a>
+                                <a class="dropdown-item" href="https://github.com/WAMIKA-Dev">Organizations</a>
+                                <a class="dropdown-item" href="https://github.com/?q=agilbudi">Something else here</a>
+                                <div class="divider"></div>
+                                <a class="dropdown-item" href="onproses.html">Contact</a>
+                            </div>
+                        </li>
+                    </ul>
                     </div>
                 </div>
             </nav>
@@ -98,23 +98,18 @@
                     <nav>
                         <ul class="footer-menu">
                             <li>
-                                <a href="#">
+                                <a href="index.html">
                                     Home
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="https://github.com/WAMIKA-Dev">
                                     Company
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="onproses.html">
                                     Portfolio
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    Blog
                                 </a>
                             </li>
                         </ul>
@@ -123,7 +118,7 @@
                             <script>
                                 document.write(new Date().getFullYear())
                                 </script>
-                            <a href="http://www.creative-tim.com">Creative Tim</a>, made with love for a better web
+                            <a href="https://github.com/agilbudi">HiDe09</a>, made with <i class="fa fa-heart heart text-danger" alt="love"></i> for reader
                         </p>
                     </nav>
                 </div>
@@ -131,74 +126,6 @@
             <!-- End footer  -->
         </div>
     </div>
-    <!-- setting  -->
-    <div class="fixed-plugin">
-    <div class="dropdown show-dropdown">
-        <a href="#" data-toggle="dropdown">
-            <i class="fa fa-cog fa-2x"> </i>
-        </a>
-
-        <ul class="dropdown-menu">
-			<li class="header-title"> Sidebar Style</li>
-            <li class="adjustments-line">
-                <a href="javascript:void(0)" class="switch-trigger">
-                    <p>Background Image</p>
-                    <label class="switch">
-                        <input type="checkbox" data-toggle="switch" checked="" data-on-color="primary" data-off-color="primary"><span class="toggle"></span>
-                    </label>
-                    <div class="clearfix"></div>
-                </a>
-            </li>
-            <li class="adjustments-line">
-                <a href="javascript:void(0)" class="switch-trigger background-color">
-                    <p>Filters</p>
-                    <div class="pull-right">
-                        <span class="badge filter badge-black" data-color="black"></span>
-                        <span class="badge filter badge-azure" data-color="azure"></span>
-                        <span class="badge filter badge-green" data-color="green"></span>
-                        <span class="badge filter badge-orange" data-color="orange"></span>
-                        <span class="badge filter badge-red" data-color="red"></span>
-                        <span class="badge filter badge-purple active" data-color="purple"></span>
-                    </div>
-                    <div class="clearfix"></div>
-                </a>
-            </li>
-            <li class="header-title">Sidebar Images</li>
-
-            <li class="active">
-                <a class="img-holder switch-trigger" href="javascript:void(0)">
-                    <img src="assets/img/sidebar-1.jpg" alt="" />
-                </a>
-            </li>
-            <li>
-                <a class="img-holder switch-trigger" href="javascript:void(0)">
-                    <img src="assets/img/sidebar-3.jpg" alt="" />
-                </a>
-            </li>
-            <li>
-                <a class="img-holder switch-trigger" href="javascript:void(0)">
-                    <img src="assets/img/sidebar4.jpg" alt="" />
-                </a>
-            </li>
-            <li>
-                <a class="img-holder switch-trigger" href="javascript:void(0)">
-                    <img src="https://images.pexels.com/photos/4806731/pexels-photo-4806731.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" />
-                </a>
-            </li>
-            
-            <li>
-                <a class="img-holder switch-trigger" href="javascript:void(0)">
-                    <img src="assets/img/sidebar-5.jpg" alt="" />
-                </a>
-            </li>
-
-            <li class="button-container">
-				<button id="twitter" class="btn btn-social btn-outline btn-twitter btn-round sharrre"><i class="fa fa-twitter"></i> · 256</button>
-                <button id="facebook" class="btn btn-social btn-outline btn-facebook btn-round sharrre"><i class="fa fa-facebook-square"></i> · 426</button>
-            </li>
-        </ul>
-    </div>
-</div>
 
 </body>
 <!--   Core JS Files   -->
@@ -221,10 +148,10 @@
         $('.menu').click(function() {
             var name = $(this).attr('id');
             
-            if (name == "uas") {
+            if (name == "task") {
                 $('.menu').removeClass('active');
-                $('.content').load('uas.html');
-                $('#uas').addClass('active');
+                $('.content').load('task.html');
+                $('#task').addClass('active');
             } else if (name == "profile") {
                 $('.menu').removeClass('active');
                 $('.content').load('profile.html');
@@ -232,8 +159,8 @@
             }
         });
         // halaman yang di load default pertama kali
-        $('.content').load('uas.html');
-        $('#uas').addClass('active');
+        $('.content').load('profile.html');
+        $('#profile').addClass('active');
     });
 </script>
 </html>

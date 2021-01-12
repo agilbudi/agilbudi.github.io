@@ -339,7 +339,7 @@ body>.navbar-collapse {
     top: 0;
     bottom: 0;
     left: 0;
-    width: 260px;
+    width: 240px;
     display: block;
     z-index: 1;
     color: #fff;
@@ -354,7 +354,7 @@ body>.navbar-collapse .sidebar-wrapper {
     max-height: calc(100vh - 75px);
     min-height: 100%;
     overflow: auto;
-    width: 260px;
+    width: 240px;
     z-index: 4;
     padding-bottom: 100px;
 }
@@ -393,7 +393,7 @@ body>.navbar-collapse .logo p {
 .sidebar .logo .simple-text,
 body>.navbar-collapse .logo .simple-text {
     text-transform: uppercase;
-    padding: 5px 0px;
+    padding: 3px 0px;
     display: block;
     font-size: 18px;
     color: #FFFFFF;
@@ -691,7 +691,7 @@ body>.navbar-collapse[data-color="purple"]:after {
     background: rgba(203, 203, 210, 0.15);
     position: relative;
     float: right;
-    width: calc(100% - 260px);
+    width: calc(100% - 240px);
     min-height: 100%;
 }
 
@@ -2787,7 +2787,7 @@ Copyright (c) 2015 Daniel Eden
     width: 100%;
     overflow: hidden;
     height: 260px;
-    border-radius: 4px 4px 0 0;
+    border-radius: 6px 6px 0 0;
     position: relative;
     -webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
@@ -2989,7 +2989,7 @@ Copyright (c) 2015 Daniel Eden
 }
 
 .card-user .card-image {
-    height: 110px;
+    height: 310px;
 }
 
 .card-user .card-image-plain {
